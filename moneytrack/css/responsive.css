@@ -1,0 +1,24 @@
+/* ===== Responsive breakpoints ===== */
+@media (max-width: 1080px) {
+  .dash-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+  .sidebar { display: none; }
+  .bottom-nav { display: block; }
+  .fab { display: flex; }
+  .app-main { padding: var(--sp-4); padding-bottom: calc(var(--bottom-nav-height) + var(--sp-8)); }
+  .app-header { padding: 0 var(--sp-4); }
+  .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .app-header__title { font-size: var(--fs-md); }
+}
