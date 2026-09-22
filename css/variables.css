@@ -1,0 +1,133 @@
+/* ===== MoneyTrack Design Tokens ===== */
+:root {
+  /* Brand */
+  --color-primary: #0F6E5C;
+  --color-primary-dark: #0A4F42;
+  --color-primary-light: #E4F2EE;
+  --color-accent: #B8860B;
+  --color-accent-light: #FBF3DE;
+
+  /* Semantic */
+  --color-success: #1E8E5A;
+  --color-success-bg: #E7F5EE;
+  --color-danger: #C0392B;
+  --color-danger-bg: #FBEAE8;
+  --color-warning: #B8860B;
+  --color-warning-bg: #FBF3DE;
+  --color-info: #2461A8;
+  --color-info-bg: #E9F1FA;
+
+  /* Neutrals (light mode) */
+  --bg-app: #F5F7F6;
+  --bg-surface: #FFFFFF;
+  --bg-surface-raised: #FFFFFF;
+  --bg-subtle: #EFF3F1;
+  --border-color: #DFE5E2;
+  --border-strong: #C7D0CB;
+  --text-primary: #12211D;
+  --text-secondary: #55655F;
+  --text-muted: #8B968F;
+  --text-on-primary: #FFFFFF;
+  --shadow-color: 160 20% 10%;
+  --shadow-sm: 0 1px 2px hsl(var(--shadow-color) / 0.06);
+  --shadow-md: 0 4px 12px hsl(var(--shadow-color) / 0.08);
+  --shadow-lg: 0 12px 32px hsl(var(--shadow-color) / 0.12);
+
+  /* Typography */
+  --font-ui: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-numeric: "Manrope", system-ui, sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.625rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.5rem;
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+
+  /* Spacing scale */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --sidebar-width: 248px;
+  --sidebar-width-collapsed: 76px;
+  --header-height: 64px;
+  --bottom-nav-height: 62px;
+  --fab-size: 56px;
+
+  /* Motion */
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-app: #0D1613;
+  --bg-surface: #142320;
+  --bg-surface-raised: #172A26;
+  --bg-subtle: #1B2E29;
+  --border-color: #24413A;
+  --border-strong: #305448;
+  --text-primary: #EAF2EF;
+  --text-secondary: #A9BDB6;
+  --text-muted: #6E8A81;
+  --text-on-primary: #FFFFFF;
+  --color-primary: #2FA98A;
+  --color-primary-dark: #237A63;
+  --color-primary-light: #16332C;
+  --color-success: #3BB889;
+  --color-success-bg: #14322A;
+  --color-danger: #E2695C;
+  --color-danger-bg: #3A1C19;
+  --color-warning: #D4AF4A;
+  --color-warning-bg: #33291B;
+  --color-info: #5B9BD9;
+  --color-info-bg: #17293A;
+  --shadow-color: 160 40% 2%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg-app: #0D1613;
+    --bg-surface: #142320;
+    --bg-surface-raised: #172A26;
+    --bg-subtle: #1B2E29;
+    --border-color: #24413A;
+    --border-strong: #305448;
+    --text-primary: #EAF2EF;
+    --text-secondary: #A9BDB6;
+    --text-muted: #6E8A81;
+    --text-on-primary: #FFFFFF;
+    --color-primary: #2FA98A;
+    --color-primary-dark: #237A63;
+    --color-primary-light: #16332C;
+    --color-success: #3BB889;
+    --color-success-bg: #14322A;
+    --color-danger: #E2695C;
+    --color-danger-bg: #3A1C19;
+    --color-warning: #D4AF4A;
+    --color-warning-bg: #33291B;
+    --color-info: #5B9BD9;
+    --color-info-bg: #17293A;
+    --shadow-color: 160 40% 2%;
+  }
+}
